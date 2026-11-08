@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f7fb">
+  <meta name="description" content="Consulte e descarregue os catálogos Electrolux e AEG, sempre atualizados.">
+  <title>Portal de Catálogos | Electrolux & AEG</title>
+  <style>
+    :root{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:#172239;background:#f6f7fb;font-synthesis:none;-webkit-font-smoothing:antialiased}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh}button,input,a{font:inherit}button{cursor:pointer}a{color:inherit}
+    .site-header{border-bottom:1px solid #e7eaf1;background:#fff}.wrap{width:min(1140px,calc(100% - 40px));margin:auto}.topbar{height:78px;display:flex;align-items:center;justify-content:space-between;gap:16px}.identity{display:flex;align-items:center;gap:12px;text-decoration:none}.logo-mark{height:38px;width:38px;background:#172239;border-radius:11px;display:grid;place-items:center;color:#fff}.identity-text{display:flex;flex-direction:column;gap:2px}.identity strong{font-size:15px;font-weight:750;letter-spacing:-.025em}.identity span{font-size:11px;letter-spacing:.08em;color:#738096;font-weight:680;text-transform:uppercase}.header-right{display:flex;align-items:center;gap:16px}.live{font-size:12px;color:#536175;display:flex;align-items:center;gap:7px;white-space:nowrap}.dot{height:7px;width:7px;border-radius:50%;background:#2aa87a;display:inline-block}.refresh-top{border:1px solid #e2e6ee;background:white;color:#384358;padding:9px 12px;border-radius:9px;display:flex;align-items:center;gap:7px;font-size:12px;font-weight:680}.refresh-top:hover{background:#f6f7fa}
+    .hero{padding:61px 0 36px;display:flex;justify-content:space-between;gap:30px;align-items:center}.eyebrow{color:#67758e;text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:750;display:flex;align-items:center;gap:8px;margin:0 0 14px}.eyebrow:before{content:'';background:#d72637;width:22px;height:3px;border-radius:3px}.hero h1{font-size:clamp(32px,4.3vw,52px);font-weight:785;letter-spacing:-.058em;line-height:1.08;max-width:650px;margin:0}.hero h1 em{font-style:normal;color:#65718b}.hero p{color:#647086;font-size:15px;line-height:1.75;max-width:550px;margin:17px 0 0}.hero-icon{flex-shrink:0;width:155px;height:155px;border:1px solid #e4e9f0;border-radius:36px;background:#fff;display:grid;place-items:center;transform:rotate(-9deg);box-shadow:0 16px 45px rgba(22,36,69,.04)}.hero-icon svg{transform:rotate(9deg);opacity:.83}
+    .main{margin:0 auto 90px}.panel{background:white;border:1px solid #e7eaf1;border-radius:20px;box-shadow:0 10px 30px rgba(25,42,76,.025);overflow:hidden}.brand-bar{padding:22px 25px 0;display:flex;gap:24px;border-bottom:1px solid #e8ebf2}.brand-tab{border:0;background:none;padding:4px 4px 18px;color:#8b94a6;font-size:18px;letter-spacing:-.04em;font-weight:750;border-bottom:3px solid transparent;display:flex;align-items:center;gap:10px;transition:color .18s}.brand-tab[aria-selected="true"]{color:#202b41;border-bottom-color:#d62637}.brand-tab[aria-selected="true"][data-brand="electrolux"]{border-bottom-color:#184a9f}.brand-counter{background:#eef1f5;color:#7f8795;font-size:11px;min-width:23px;padding:4px 7px;border-radius:7px;font-weight:700;letter-spacing:0}.brand-tab[aria-selected="true"] .brand-counter{color:#4a556b;background:#e9edf3}
+    .tools{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:24px 25px 18px;flex-wrap:wrap}.left-tools{display:flex;align-items:center;gap:16px}.section-title{font-size:15px;font-weight:750;letter-spacing:-.02em}.count{color:#8a96a9;font-size:12px}.search{position:relative;min-width:min(100%,288px);width:288px}.search input{outline:0;width:100%;height:43px;border:1px solid #e2e7ef;background:#f9fafc;border-radius:10px;padding:0 15px 0 41px;color:#2f3a50;font-size:13px}.search input:focus{border-color:#9aaac6;box-shadow:0 0 0 3px #e4e9f4}.search input::placeholder{color:#95a0b1}.search svg{position:absolute;top:13px;left:13px;color:#9ba5b3}
+    .catalog-grid{padding:2px 25px 30px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;min-height:200px}.catalog-card{border:1px solid #e6eaf1;border-radius:14px;padding:20px 18px 16px;display:flex;flex-direction:column;gap:0;min-width:0;background:white;transition:box-shadow .2s, transform .2s}.catalog-card:hover{box-shadow:0 12px 25px rgba(33,47,77,.07);transform:translateY(-2px)}.file-icon{background:#f4f6fa;border-radius:12px;color:#52637e;display:grid;place-items:center;width:52px;height:52px;margin-bottom:20px}.catalog-card h3{margin:0;color:#1e2940;font-size:15px;font-weight:740;line-height:1.5;letter-spacing:-.015em;overflow-wrap:anywhere;min-height:44px}.file-meta{display:flex;gap:8px;align-items:center;margin-top:9px;color:#8190a6;font-size:11px;flex-wrap:wrap}.file-pill{font-weight:700;letter-spacing:.04em;color:#b32a39;background:#fef0f0;border-radius:5px;padding:3px 6px}.file-pill.blue{color:#214f9a;background:#edf3fd}.buttons{display:flex;gap:8px;margin-top:auto;padding-top:23px}.btn{border-radius:9px;border:1px solid #e2e7ee;min-height:39px;padding:9px 12px;display:inline-flex;align-items:center;justify-content:center;gap:7px;text-decoration:none;font-weight:690;font-size:12px;white-space:nowrap}.btn.primary{color:white;background:#23304a;border-color:#23304a;flex:1}.btn.primary:hover{background:#394761}.btn.secondary{background:white;color:#3b4860}.btn.secondary:hover{background:#f7f8fb}.btn svg{height:15px;width:15px}.btn:disabled{opacity:.4;cursor:not-allowed}
+    .empty{grid-column:1/-1;min-height:200px;text-align:center;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;color:#8793a7}.empty strong{color:#38455b;font-size:15px}.empty small{font-size:13px;max-width:420px;line-height:1.6}.empty svg{opacity:.55}
+    .notice{margin:0 25px 25px;padding:12px 15px;background:#fff8e6;border:1px solid #f2e2ab;border-radius:10px;color:#7f6226;font-size:13px;line-height:1.6}.notice.error{background:#fff3f2;border-color:#f3dad8;color:#9a4f4a}.notice a{font-weight:700}.hidden{display:none!important}.bottom{display:flex;justify-content:space-between;align-items:center;gap:10px;color:#8d98a9;font-size:12px;margin-top:20px;flex-wrap:wrap}.bottom a{color:#5b697e;text-decoration:none}.bottom a:hover{text-decoration:underline}
+    .viewer{position:fixed;inset:0;background:rgba(12,20,38,.84);z-index:100;display:flex;flex-direction:column;padding:22px;gap:14px}.viewer[hidden]{display:none}.viewer-top{display:flex;gap:20px;align-items:center;color:white}.viewer-title{font-size:14px;font-weight:700;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.viewer-actions{display:flex;gap:9px;align-items:center}.viewer-actions a,.viewer-actions button{border:1px solid #6c7789;background:#283349;border-radius:9px;color:white;text-decoration:none;font-size:12px;padding:10px 13px;font-weight:650}.viewer-actions button{width:37px;padding:9px;font-size:19px;line-height:1}.viewer iframe{border:0;flex:1;width:min(100%,1080px);margin:auto;background:white;border-radius:8px}.viewer-help{margin:0;text-align:center;color:#d5dbe7;font-size:12px}.viewer-help a{color:#fff}
+    @media(max-width:900px){.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-icon{width:125px;height:125px}}@media(max-width:640px){.wrap{width:calc(100% - 28px)}.topbar{height:68px}.header-right .live{display:none}.hero{padding:39px 0 29px}.hero-icon{display:none}.hero h1{font-size:36px}.hero p{font-size:14px}.brand-bar{padding:17px 18px 0}.brand-tab{font-size:17px}.tools{padding:23px 18px 16px;align-items:flex-start;flex-direction:column}.search{width:100%}.catalog-grid{padding:0 17px 22px;grid-template-columns:1fr;gap:13px}.catalog-card{padding:18px}.file-icon{margin-bottom:14px}.catalog-card h3{min-height:unset}.notice{margin:0 17px 20px}.bottom{font-size:11px}.viewer{padding:9px}.viewer-top{padding:5px 2px;flex-wrap:wrap}.viewer-title{flex-basis:100%}.viewer-actions{width:100%;justify-content:flex-end}.viewer iframe{border-radius:5px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="site-header"><div class="wrap topbar">
+    <a href="./" class="identity" aria-label="Página inicial do portal de catálogos"><div class="logo-mark" aria-hidden="true"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><path d="M5 6.5h11a2 2 0 0 1 2 2V20H7a2 2 0 0 1-2-2V6.5Z" stroke="currentColor" stroke-width="1.7"/><path d="M8 4h10a2 2 0 0 1 2 2v11M9 11h6M9 14h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div><div class="identity-text"><strong>Portal de Catálogos</strong><span>Electrolux &amp; AEG</span></div></a>
+    <div class="header-right"><div class="live"><span class="dot"></span>Catálogos online</div><button class="refresh-top" id="refreshButton" type="button" aria-label="Atualizar lista de catálogos"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15.36-6.36L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.36 6.36L3 16"/><path d="M3 21v-5h5"/></svg>Atualizar</button></div>
+  </div></header>
+  <main class="wrap main">
+    <section class="hero"><div><p class="eyebrow">Documentação de produtos</p><h1>Todos os catálogos.<br><em>Num só lugar.</em></h1><p>Consulte os catálogos das nossas marcas e encontre rapidamente os documentos que procura. Visualize online ou descarregue em PDF.</p></div><div class="hero-icon" aria-hidden="true"><svg width="95" height="95" viewBox="0 0 100 100" fill="none" stroke="#34435F" stroke-width="3"><rect x="26" y="13" width="47" height="61" rx="6"/><path d="M37 30h23M37 40h23M37 50h15" stroke-linecap="round"/><path d="M18 35V78a8 8 0 0 0 8 8h35" stroke-linecap="round"/><circle cx="72" cy="70" r="14" fill="#f6f7fb"/><path d="M72 62v16m-6-6 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></div></section>
+    <section class="panel" aria-label="Lista de catálogos">
+      <div class="brand-bar" role="tablist" aria-label="Escolher marca">
+        <button class="brand-tab" data-brand="electrolux" id="tab-electrolux" role="tab" aria-selected="true" type="button">Electrolux <span class="brand-counter" id="countElectrolux">–</span></button>
+        <button class="brand-tab" data-brand="aeg" id="tab-aeg" role="tab" aria-selected="false" type="button">AEG <span class="brand-counter" id="countAeg">–</span></button>
+      </div>
+      <div class="tools"><div class="left-tools"><div class="section-title" id="currentBrand">Catálogos Electrolux</div><span class="count" id="resultsCount" aria-live="polite"></span></div><label class="search" aria-label="Pesquisar catálogos"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="search" type="search" autocomplete="off" placeholder="Pesquisar catálogos..."></label></div>
+      <div id="catalogGrid" class="catalog-grid" role="tabpanel" aria-labelledby="tab-electrolux" aria-live="polite"></div>
+      <div class="notice hidden" id="notice" role="status"></div>
+    </section>
+    <footer class="bottom"><span id="lastUpdated">A consultar os catálogos...</span><span>Documentos disponibilizados através de Google Drive</span></footer>
+  </main>
+  <div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-label="Pré-visualização de catálogo" hidden>
+    <div class="viewer-top"><div class="viewer-title" id="viewerTitle"></div><div class="viewer-actions"><a id="viewerDownload" target="_blank" rel="noopener noreferrer">Descarregar PDF</a><button id="viewerClose" type="button" aria-label="Fechar visualização">×</button></div></div>
+    <iframe id="viewerFrame" title="Visualização de catálogo PDF" allow="fullscreen"></iframe><p class="viewer-help">Se o documento não aparecer, <a id="viewerOpen" target="_blank" rel="noopener noreferrer">abra-o no Google Drive</a>.</p>
+  </div>
+  <script>
+    /* PASSO 2: substitua o texto abaixo pelo URL público da implementação Apps Script (/exec). */
+    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwoa5Wni0iKcGqLNAi8-cytztKxjh4NqDRHx487NJiur0sroh7VY7rd-1Pyk5Dmv0vhDw/exec';
+
+    const state = { brand:'electrolux', catalogs:{electrolux:[],aeg:[]}, loaded:false, busy:false, lastUpdated:null };
+    const grid = document.getElementById('catalogGrid');
+    const notice = document.getElementById('notice');
+    const search = document.getElementById('search');
+    const viewer = document.getElementById('viewer');
+    let callbackCounter = 0;
+    let previousFocus = null;
+
+    const icons = {
+      file:'<svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Z"/><path d="M13 2v7h7M8 13h8M8 17h6"/></svg>',
+      eye:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>',
+      download:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M4 17v4h16v-4"/></svg>',
+      empty:'<svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M3 9h18M8 13h8M8 16h5" stroke-linecap="round"/></svg>'
+    };
+
+    function normalize(text){return String(text || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-PT');}
+    function dateLabel(date){
+      const d = new Date(date);
+      return Number.isNaN(d.getTime()) ? '' : new Intl.DateTimeFormat('pt-PT',{day:'2-digit',month:'short',year:'numeric'}).format(d);
+    }
+    function sizeLabel(size){
+      const value = Number(size);
+      if(!Number.isFinite(value) || value <= 0)return '';
+      return value < 1048576 ? Math.max(1,Math.round(value/1024)) + ' KB' : (value/1048576).toLocaleString('pt-PT',{maximumFractionDigits:1})+' MB';
+    }
+    function fileUrls(file){
+      const key = file.resourceKey ? '&resourcekey='+encodeURIComponent(file.resourceKey) : '';
+      return {
+        preview:'https://drive.google.com/file/d/'+encodeURIComponent(file.id)+'/preview'+(key ? '?'+key.slice(1) : ''),
+        download:'https://drive.google.com/uc?export=download&id='+encodeURIComponent(file.id)+key,
+        open:'https://drive.google.com/file/d/'+encodeURIComponent(file.id)+'/view'+(key ? '?'+key.slice(1) : '')
+      };
+    }
+    function validFile(raw){
+      if(!raw || !/^[A-Za-z0-9_-]{10,}$/.test(raw.id || '') || typeof raw.name !== 'string')return null;
+      return {id:raw.id,name:raw.name.slice(0,200),size:Number(raw.size)||0,updated:raw.updated||'',resourceKey:/^[\w-]*$/.test(raw.resourceKey||'') ? (raw.resourceKey||'') : ''};
+    }
+    function showNotice(message, error){notice.textContent=message;notice.classList.remove('hidden');notice.classList.toggle('error',Boolean(error));}
+    function hideNotice(){notice.classList.add('hidden');}
+    function emptyState(title,desc){
+      grid.replaceChildren();const box=document.createElement('div');box.className='empty';box.innerHTML=icons.empty;
+      const h=document.createElement('strong');h.textContent=title;
+      const p=document.createElement('small');p.textContent=desc;
+      box.append(h,p);grid.append(box);
+    }
+    function card(file){
+      const item=document.createElement('article');item.className='catalog-card';
+      const icon=document.createElement('div');icon.className='file-icon';icon.innerHTML=icons.file;
+      const title=document.createElement('h3');title.textContent=file.name.replace(/\.pdf$/i,'');
+      const meta=document.createElement('div');meta.className='file-meta';
+      const pill=document.createElement('span');pill.className='file-pill'+(state.brand==='electrolux'?' blue':'');pill.textContent='PDF';meta.append(pill);
+      const size=sizeLabel(file.size);if(size){const s=document.createElement('span');s.textContent=size;meta.append(s);}
+      const updated=dateLabel(file.updated);if(updated){const d=document.createElement('span');d.textContent='Atualizado: '+updated;meta.append(d);}
+      const actions=document.createElement('div');actions.className='buttons';
+      const view=document.createElement('button');view.type='button';view.className='btn primary';view.innerHTML=icons.eye+'Visualizar';view.addEventListener('click',()=>openViewer(file));
+      const download=document.createElement('a');download.className='btn secondary';download.innerHTML=icons.download+'Descarregar';download.href=fileUrls(file).download;download.target='_blank';download.rel='noopener noreferrer';download.setAttribute('aria-label','Descarregar '+file.name);
+      actions.append(view,download);item.append(icon,title,meta,actions);return item;
+    }
+    function render(){
+      const brandName=state.brand==='electrolux'?'Electrolux':'AEG';
+      document.getElementById('currentBrand').textContent='Catálogos '+brandName;
+      document.getElementById('countElectrolux').textContent=state.loaded?state.catalogs.electrolux.length:'–';
+      document.getElementById('countAeg').textContent=state.loaded?state.catalogs.aeg.length:'–';
+      document.querySelectorAll('.brand-tab').forEach(tab=>tab.setAttribute('aria-selected',String(tab.dataset.brand===state.brand)));
+      grid.setAttribute('aria-labelledby','tab-'+state.brand);
+      if(!state.loaded){document.getElementById('resultsCount').textContent='';emptyState('A carregar catálogos...','A consultar os documentos disponíveis.');return;}
+      const query=normalize(search.value.trim());
+      const files=state.catalogs[state.brand].filter(f=>normalize(f.name).includes(query));
+      document.getElementById('resultsCount').textContent=files.length+' '+(files.length===1?'documento':'documentos');
+      grid.replaceChildren();
+      if(!files.length){emptyState(query?'Nenhum resultado encontrado':'Ainda não existem catálogos',query?'Experimente pesquisar por outra palavra.':'Quando forem adicionados PDFs à pasta do Google Drive, aparecerão aqui automaticamente.');return;}
+      const fragment=document.createDocumentFragment();files.forEach(file=>fragment.append(card(file)));grid.append(fragment);
+    }
+    function jsonp(url){
+      return new Promise((resolve,reject)=>{
+        const cb='catalogCallback_'+Date.now()+'_'+(++callbackCounter);
+        const script=document.createElement('script');let finished=false;
+        const done=(err,value)=>{if(finished)return;finished=true;clearTimeout(timer);delete window[cb];script.remove();err?reject(err):resolve(value);};
+        const timer=setTimeout(()=>done(new Error('O pedido excedeu o tempo de resposta.')),18000);
+        window[cb]=data=>done(null,data);
+        script.onerror=()=>done(new Error('Não foi possível contactar o Google Apps Script.'));
+        script.src=url+(url.includes('?')?'&':'?')+'callback='+encodeURIComponent(cb)+'&_='+Date.now();
+        script.async=true;script.referrerPolicy='no-referrer';document.head.append(script);
+      });
+    }
+    async function loadCatalogs(){
+      if(state.busy)return;state.busy=true;
+      const button=document.getElementById('refreshButton');button.disabled=true;button.style.opacity='.55';hideNotice();
+      try{
+        if(!/^https:\/\/script\.google\.com\/macros\/s\/.+\/exec(?:\?.*)?$/.test(APPS_SCRIPT_URL)){
+          throw new Error('Falta configurar o endereço do Google Apps Script no ficheiro index.html. Consulte o GUIA.md.');
+        }
+        const response=await jsonp(APPS_SCRIPT_URL);
+        if(!response || !response.ok || !response.catalogs)throw new Error(response&&response.error || 'Resposta inesperada do serviço.');
+        const raw=response.catalogs;
+        state.catalogs={
+          electrolux:Array.isArray(raw.electrolux)?raw.electrolux.map(validFile).filter(Boolean):[],
+          aeg:Array.isArray(raw.aeg)?raw.aeg.map(validFile).filter(Boolean):[]
+        };
+        state.loaded=true;state.lastUpdated=new Date();render();
+        document.getElementById('lastUpdated').textContent='Lista verificada às '+new Intl.DateTimeFormat('pt-PT',{hour:'2-digit',minute:'2-digit'}).format(state.lastUpdated)+' · Atualização automática a cada 5 minutos';
+      }catch(error){
+        if(!state.loaded)emptyState('Não foi possível carregar os catálogos','Verifique a configuração e tente novamente.');
+        showNotice(error.message||'Erro desconhecido.',true);
+        document.getElementById('lastUpdated').textContent='Não foi possível atualizar a lista';
+      }finally{state.busy=false;button.disabled=false;button.style.opacity='1';}
+    }
+    function openViewer(file){
+      previousFocus=document.activeElement;
+      const links=fileUrls(file);
+      document.getElementById('viewerTitle').textContent=file.name;
+      document.getElementById('viewerFrame').src=links.preview;
+      document.getElementById('viewerDownload').href=links.download;
+      document.getElementById('viewerOpen').href=links.open;
+      viewer.hidden=false;document.body.style.overflow='hidden';document.getElementById('viewerClose').focus();
+    }
+    function closeViewer(){viewer.hidden=true;document.getElementById('viewerFrame').src='about:blank';document.body.style.overflow='';if(previousFocus)previousFocus.focus();}
+    document.querySelectorAll('.brand-tab').forEach(el=>el.addEventListener('click',()=>{state.brand=el.dataset.brand;search.value='';render();}));
+    search.addEventListener('input',render);
+    document.getElementById('refreshButton').addEventListener('click',loadCatalogs);
+    document.getElementById('viewerClose').addEventListener('click',closeViewer);
+    viewer.addEventListener('click',event=>{if(event.target===viewer)closeViewer();});
+    document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!viewer.hidden)closeViewer();});
+    render();loadCatalogs();setInterval(()=>{if(!document.hidden)loadCatalogs();},5*60*1000);
+  </script>
+</body>
+</html>
